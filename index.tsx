@@ -1,20 +1,24 @@
-import { StyleSheet , TextInput } from 'react-native'
-import React from 'react';
-
-const index = ({placeholder}) => {
+import { StyleSheet, Text, View, ImageBackground } from 'react-native'
+import React from 'react'
+const index = ({text}) => {
   return (
-        <TextInput placeholder={placeholder} style={style.inputUsername} />
-        );
-    };
+    <View>
+        
+        <Text style={style.text}> {text}</Text>
+      
+    </View>
+  )
+}
 
 const style = StyleSheet.create({
-    inputUsername: {
-        borderColor: 'grey',
-        borderWidth: 3,
-        margin: 10,
-        borderRadius: 10,
-        padding: 10,
-      },
+text: {
+    color: '#00CED1',
+    fontSize: 27,
+    lineHeight: 75,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    backgroundColor: '#191970',
+    },
 });
 
 export default index
