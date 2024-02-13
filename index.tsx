@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, ImageBackground } from 'react-native'
 import React from 'react'
-const index = ({text}) => {
+const Titleee = ({text}) => {
   return (
     <View>
         
@@ -12,13 +12,15 @@ const index = ({text}) => {
 
 const style = StyleSheet.create({
 text: {
-    color: '#00CED1',
-    fontSize: 27,
-    lineHeight: 75,
+    color: 'purple',
+    fontSize: 13,
+    lineHeight: 30,
     fontWeight: 'bold',
-    textAlign: 'center',
-    backgroundColor: '#191970',
-    },
+    margin:0,
+    marginBottom :5,
+    marginTop : 0,
+    alignSelf : 'flex-end'
+}
 });
 
-export default index
+export default Titleee
